@@ -4,6 +4,7 @@ import AboutUsSection from "@/components/AboutUs";
 import HeroSection from "@/components/Hero";
 import { Logo } from "@/components/Logos";
 import Navbar from "@/components/Navbar";
+import ProjectsSection from "@/components/Projects";
 import ServicesSection from "@/components/Services";
 import InfiniteText from "@/components/infiniteText/page";
 
@@ -19,6 +20,7 @@ export default function MainPage() {
       <ServicesSection />
       <AboutUsSection />
       <Logo />
+      <ProjectsSection />
     </main>
   );
 }
