@@ -184,24 +184,17 @@ const Navbar: React.FC = () => {
                     </span>
                 </motion.button>
             </div>
-            <div className='bg-white w-12 h-12 flex items-center justify-center rounded-full p-2 cursor-pointer'>
-                <Menu />
-            </div>
-        </div>
-          <div className="-mr-2 flex md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="bg-black text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+            <div className="bg-white w-12 h-12 flex items-center justify-center rounded-full p-2 cursor-pointer">
+            <button onClick={() => setMenuOpen(!menuOpen)} className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
               <span className="sr-only">Open main menu</span>
               {!menuOpen ? (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
+                <Menu />
               ) : (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <Menu />
               )}
             </button>
           </div>
+        </div>
         </div>
       </div>
       {menuOpen && (
