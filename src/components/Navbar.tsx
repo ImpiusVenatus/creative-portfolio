@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
   const controls = useAnimation();
 
-  const createHoverEffect = () => {
+  const useHoverEffect = () => {
     const controls = useAnimation();
 
     const handleMouseEnter = () => {
@@ -22,11 +22,11 @@ const Navbar: React.FC = () => {
     return { controls, handleMouseEnter, handleMouseLeave };
   };
 
-  const aboutEffect = createHoverEffect();
-  const casesEffect = createHoverEffect();
-  const reviewsEffect = createHoverEffect();
-  const contactEffect = createHoverEffect();
-  const buttonEffect = createHoverEffect();
+  const aboutEffect = useHoverEffect();
+  const casesEffect = useHoverEffect();
+  const reviewsEffect = useHoverEffect();
+  const contactEffect = useHoverEffect();
+  const buttonEffect = useHoverEffect();
 
   return (
     <nav className="fixed top-8 w-full z-40 bg-transparent">
