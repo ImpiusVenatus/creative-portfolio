@@ -1,6 +1,7 @@
 "use client"
 
 import AboutUsSection from "@/components/AboutUs";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import { Logo } from "@/components/Logos";
 import Navbar from "@/components/Navbar";
@@ -23,6 +24,7 @@ export default function MainPage() {
       <Logo />
       <ProjectsSection />
       <PortfolioSection />
+      <Footer />
     </main>
   );
 }
