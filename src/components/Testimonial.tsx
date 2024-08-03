@@ -41,7 +41,7 @@ const Testimonial: React.FC = () => {
             </p>
         </div>
         <div className='w-3/20 text-[12rem]'>
-            <span>"</span>
+            <span>&quot;</span>
         </div>
         <div className="max-w-4xl flex-grow py-16 px-4">
             <AnimatePresence mode='wait'>
