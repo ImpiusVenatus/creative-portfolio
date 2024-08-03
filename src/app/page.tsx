@@ -2,12 +2,14 @@
 
 import AboutUsSection from "@/components/AboutUs";
 import Footer from "@/components/Footer";
+import Growth from "@/components/Growth";
 import HeroSection from "@/components/Hero";
 import { Logo } from "@/components/Logos";
 import Navbar from "@/components/Navbar";
 import PortfolioSection from "@/components/Portfolio";
 import ProjectsSection from "@/components/Projects";
 import ServicesSection from "@/components/Services";
+import Testimonial from "@/components/Testimonial";
 import InfiniteText from "@/components/infiniteText/page";
 
 export default function MainPage() {
@@ -24,6 +26,8 @@ export default function MainPage() {
       <Logo />
       <ProjectsSection />
       <PortfolioSection />
+      <Growth />
+      <Testimonial />
       <Footer />
     </main>
   );
