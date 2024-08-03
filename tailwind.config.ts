@@ -22,6 +22,12 @@ const config = {
       },
     },
     extend: {
+      willChange: {
+        'transform': 'transform',
+      },
+      objectPosition: {
+        'center-top': 'center top',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -105,7 +111,14 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors, function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>, options: string[]) => void }) {
+    const newUtilities = {
+      '.will-change-transform': {
+        willChange: 'transform',
+      },
+    }
+    addUtilities(newUtilities, ['responsive', 'hover']);
+  }],
 } satisfies Config
 
 function addVariablesForColors({ addBase, theme }: any) {
