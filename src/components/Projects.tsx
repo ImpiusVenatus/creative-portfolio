@@ -260,10 +260,6 @@ const ProjectsSection: React.FC = () => {
             </div>
          </div>
         </div>
-
-        <div>
-          Hello
-        </div>
       </div>
     </section>
   );
