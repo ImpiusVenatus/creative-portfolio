@@ -17,7 +17,7 @@ const PortfolioSection: React.FC = () => {
             </div>
             <div>
                 <h2 className="text-6xl font-normal text-[#242424] mb-8">
-                We don't do cookie-cutter solutions
+                We don&apos;t do cookie-cutter solutions
                 </h2>
                 <button className='text-[#242424b3]'>Schedule a meeting</button>
             </div>
